@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node 
+{
+    int data;
+    struct node * link;
+};
+void main()
+{
+    struct node *head;
+    head=malloc(sizeof(struct node));
+    head->data=10;
+    head-> link=NULL;
+    printf("%d is data ",head->data);
+}
